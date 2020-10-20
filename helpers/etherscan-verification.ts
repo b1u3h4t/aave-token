@@ -2,7 +2,7 @@ import { exit } from "process";
 import fs from "fs";
 import { file } from "tmp-promise";
 import { BRE } from "./misc-utils";
-export const SUPPORTED_ETHERSCAN_NETWORKS = ["main", "ropsten", "kovan"];
+export const SUPPORTED_ETHERSCAN_NETWORKS = ["main", "rinkeby", "kovan"];
 
 export const getEtherscanPath = async (contractName: string) => {
   const compilerInput = await BRE.run("compile:get-compiler-input");

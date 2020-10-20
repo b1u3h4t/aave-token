@@ -26,7 +26,7 @@ const ETHERSCAN_KEY = process.env.ETHERSCAN_KEY || "";
 const MNEMONIC_PATH = "m/44'/60'/0'/0";
 const MNEMONICS: { [network: string]: string } = {
   [eEthereumNetwork.kovan]: process.env.MNEMONIC || "",
-  [eEthereumNetwork.ropsten]: process.env.MNEMONIC || "",
+  [eEthereumNetwork.rinkeby]: process.env.MNEMONIC || "",
   [eEthereumNetwork.main]: process.env.MNEMONIC || "",
 };
 
@@ -70,7 +70,7 @@ const config: BuidlerConfig = {
   },
   networks: {
     kovan: getCommonNetworkConfig(eEthereumNetwork.kovan, 42),
-    ropsten: getCommonNetworkConfig(eEthereumNetwork.ropsten, 3),
+    rinkeby: getCommonNetworkConfig(eEthereumNetwork.rinkeby, 3),
     main: getCommonNetworkConfig(eEthereumNetwork.main, 1),
     buidlerevm: {
       hardfork: "istanbul",

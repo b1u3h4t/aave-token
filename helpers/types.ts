@@ -4,7 +4,7 @@ export enum eEthereumNetwork {
   coverage = "coverage",
   buidlerevm = "buidlerevm",
   kovan = "kovan",
-  ropsten = "ropsten",
+  rinkeby = "rinkeby",
   main = "main",
 }
 
@@ -33,6 +33,6 @@ export interface iParamsPerNetwork<T> {
   [eEthereumNetwork.coverage]: T;
   [eEthereumNetwork.buidlerevm]: T;
   [eEthereumNetwork.kovan]: T;
-  [eEthereumNetwork.ropsten]: T;
+  [eEthereumNetwork.rinkeby]: T;
   [eEthereumNetwork.main]: T;
 }

@@ -12,7 +12,7 @@ export const MAX_UINT_AMOUNT =
 export const MOCK_ETH_ADDRESS = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE";
 export const WAD = Math.pow(10, 18).toString();
 
-export const SUPPORTED_ETHERSCAN_NETWORKS = ["main", "ropsten", "kovan"];
+export const SUPPORTED_ETHERSCAN_NETWORKS = ["main", "rinkeby", "kovan"];
 
 export const getAaveTokenDomainSeparatorPerNetwork = (
   network: eEthereumNetwork
@@ -24,7 +24,7 @@ export const getAaveTokenDomainSeparatorPerNetwork = (
       [eEthereumNetwork.buidlerevm]:
         "0xd76d40d21133f42fdacea0d02807309902f26a87ff5b55bb55ac77f881143cc4",
       [eEthereumNetwork.kovan]: "",
-      [eEthereumNetwork.ropsten]: "",
+      [eEthereumNetwork.rinkeby]: "",
       [eEthereumNetwork.main]: "",
     },
     network
@@ -39,7 +39,7 @@ export const getAaveAdminPerNetwork = (
       [eEthereumNetwork.coverage]: ZERO_ADDRESS,
       [eEthereumNetwork.buidlerevm]: ZERO_ADDRESS,
       [eEthereumNetwork.kovan]: "0x6940B44a8eFBc625e1309d79F8dea34f155D4330",
-      [eEthereumNetwork.ropsten]: "0xEd93e49A2d75beA505fD4D1A0Dff745f69F2E997",
+      [eEthereumNetwork.rinkeby]: "0xEd93e49A2d75beA505fD4D1A0Dff745f69F2E997",
       [eEthereumNetwork.main]: "0x8a2Efd9A790199F4c94c6effE210fce0B4724f52",
     },
     network
@@ -53,7 +53,7 @@ export const getLendTokenPerNetwork = (
       [eEthereumNetwork.coverage]: ZERO_ADDRESS,
       [eEthereumNetwork.buidlerevm]: ZERO_ADDRESS,
       [eEthereumNetwork.kovan]: "0x690eaca024935aaff9b14b9ff9e9c8757a281f3c",
-      [eEthereumNetwork.ropsten]: "0xb47f338ec1e3857bb188e63569aebab036ee67c6",
+      [eEthereumNetwork.rinkeby]: "0xb47f338ec1e3857bb188e63569aebab036ee67c6",
       [eEthereumNetwork.main]: "0x80fB784B7eD66730e8b1DBd9820aFD29931aab03",
     },
     network

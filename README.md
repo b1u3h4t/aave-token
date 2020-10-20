@@ -66,7 +66,7 @@ npm run dev:deployment
 For any other network, you can run the deployment in the following way
 
 ```
-npm run ropsten:deployment
+npm run rinkeby:deployment
 ```
 
 You can also set an optional `$AAVE_ADMIN` enviroment variable to set an ETH address as the admin of the AaveToken and LendToAaveMigrator proxies. If not set, the deployment will set the second account of the `accounts` network configuration at `buidler.config.ts`.

@@ -23,7 +23,7 @@ export const setBRE = (_BRE: BuidlerRuntimeEnvironment) => {
 };
 
 export const getParamPerNetwork = <T>(
-  { kovan, ropsten, main, buidlerevm, coverage }: iParamsPerNetwork<T>,
+  { kovan, rinkeby, main, buidlerevm, coverage }: iParamsPerNetwork<T>,
   network: eEthereumNetwork
 ) => {
   switch (network) {
@@ -33,8 +33,8 @@ export const getParamPerNetwork = <T>(
       return buidlerevm;
     case eEthereumNetwork.kovan:
       return kovan;
-    case eEthereumNetwork.ropsten:
-      return ropsten;
+    case eEthereumNetwork.rinkeby:
+      return rinkeby;
     case eEthereumNetwork.main:
       return main;
     default:
